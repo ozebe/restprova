@@ -11,24 +11,34 @@
     </div>
   <% end %>
 
+  <div>
+    <%= form.label :'Restaurante'%>
+    <%= collection_select(:restaurant, :restaurant_id, Restaurant.all, :id, :name, {}, { :multiple => false } )%>
+  </div>
+
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :'Nome' %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    <%= form.label :'Preço' %>
     <%= form.number_field :price %>
   </div>
 
   <div class="field">
-    <%= form.label :time_prep %>
+    <%= form.label :'Tempo de preparo em minutos' %>
     <%= form.number_field :time_prep %>
   </div>
 
   <div class="field">
-    <%= form.label :category %>
+    <%= form.label :'Categoria do prato' %>
     <%= form.text_field :category %>
+  </div>
+
+  <div>
+    <%= form.label :'Ingredientes'%>
+    <%= collection_select(:ingredient, :ingredient_ids, Ingredient.all, :id, :description, {}, { :multiple => true } )%>
   </div>
 
   <div class="actions">
