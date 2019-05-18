@@ -17,3 +17,33 @@
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
+
+<h1>Pratos servidos nesse restaurante</h1>
+
+<div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Tempo de preparo</th>
+      <th>Categoria</th>
+      <th colspan="4"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @dishes.order("name").each do |dish|%>
+      <tr>
+        <td><%= dish.name %></td>
+        <td><%= dish.price %></td>
+        <td><%= dish.time_prep %></td>
+        <td><%= dish.category %></td>
+        <td><%= link_to 'Visualizar', dish %></td>
+        <td><%= link_to 'Editar', edit_dish_path(dish) %></td>
+        <td><%= link_to 'Apagar', dish, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
