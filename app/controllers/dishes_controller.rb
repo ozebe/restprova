@@ -4,7 +4,8 @@ class DishesController < ApplicationController
   # GET /dishes
   # GET /dishes.json
   def index
-    @dishes = Dish.all
+    @dishes = Dish.order(:name)
+
   end
 
   # GET /dishes/1
@@ -26,9 +27,21 @@ class DishesController < ApplicationController
   def create
     @dish = Dish.new(dish_params)
 
+    params[:ingredient][:ingredient_ids].each do |ingredient_id|
+      unless ingredient_id.empty?
+        ingredient = Ingredient.find(ingredient_id)
+        @dish.ingredients << ingredient
+      end
+    end
+
+    params[:restaurant][:restaurant_id].each_line do |restaurant_id|
+        restaurant = Restaurant.find(restaurant_id)
+        @dish.restaurants << restaurant
+    end
+
     respond_to do |format|
       if @dish.save
-        format.html { redirect_to @dish, notice: 'Dish was successfully created.' }
+        format.html { redirect_to @dish, notice: 'Prato adicionado!' }
         format.json { render :show, status: :created, location: @dish }
       else
         format.html { render :new }
@@ -40,9 +53,25 @@ class DishesController < ApplicationController
   # PATCH/PUT /dishes/1
   # PATCH/PUT /dishes/1.json
   def update
+    @dish.ingredients.clear
+    params[:ingredient][:ingredient_ids].each do |ingredient_id|
+      unless ingredient_id.empty?
+        ingredient = Ingredient.find(ingredient_id)
+
+        @dish.ingredients << ingredient
+      end
+    end
+
+    @dish.restaurants.clear
+    params[:restaurant][:restaurant_id].each_line do |restaurant_id|
+      restaurant = Restaurant.find(restaurant_id)
+      @dish.restaurants << restaurant
+    end
+
+
     respond_to do |format|
       if @dish.update(dish_params)
-        format.html { redirect_to @dish, notice: 'Dish was successfully updated.' }
+        format.html { redirect_to @dish, notice: 'Prato atualizado!' }
         format.json { render :show, status: :ok, location: @dish }
       else
         format.html { render :edit }
@@ -56,7 +85,7 @@ class DishesController < ApplicationController
   def destroy
     @dish.destroy
     respond_to do |format|
-      format.html { redirect_to dishes_url, notice: 'Dish was successfully destroyed.' }
+      format.html { redirect_to dishes_url, notice: 'Prato apagado!' }
       format.json { head :no_content }
     end
   end
