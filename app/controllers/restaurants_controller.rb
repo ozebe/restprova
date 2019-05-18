@@ -4,12 +4,20 @@ class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
   def index
-    @restaurants = Restaurant.all
+    @restaurants = Restaurant.all.order(:name)
+
   end
 
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+    @dishes = Dish.all
+    #é criada a união das tabelas para conseguirmos pegar os dados delas
+    @dishes = @dishes.joins("INNER JOIN dishes_restaurants AS dr ON dishes.id = dr.dish_id INNER JOIN restaurants AS r
+    ON dr.restaurant_id = r.id")
+
+    @dishes = @dishes.where("r.id = "+params[:id])
+
   end
 
   # GET /restaurants/new
@@ -19,6 +27,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/1/edit
   def edit
+    @restaurants = Restaurant.all.order(:name)
   end
 
   # POST /restaurants
