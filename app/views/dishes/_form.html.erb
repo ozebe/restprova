@@ -16,32 +16,55 @@
     <%= collection_select(:restaurant, :restaurant_id, Restaurant.all, :id, :name, {}, { :multiple => false } )%>
   </div>
 
+  <div class="row">
   <div class="field">
+    <div class="col-xs-3">
     <%= form.label :'Nome' %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, :class => "form-control" %>
+    </div>
+  </div>
   </div>
 
+  <div class="row">
   <div class="field">
+    <div class="col-xs-3">
     <%= form.label :'Preço' %>
-    <%= form.number_field :price %>
+    <%= form.number_field :price, :class => "form-control" %>
+    </div>
+  </div>
   </div>
 
+  <div class="row">
   <div class="field">
+    <div class="col-xs-3">
     <%= form.label :'Tempo de preparo em minutos' %>
-    <%= form.number_field :time_prep %>
+    <%= form.number_field :time_prep, :class => "form-control" %>
+    </div>
+  </div>
   </div>
 
+  <div class="row">
   <div class="field">
+    <div class="col-xs-3">
     <%= form.label :'Categoria do prato' %>
-    <%= form.text_field :category %>
+    <%= form.text_field :category, :class => "form-control" %>
+    </div>
+  </div>
   </div>
 
-  <div>
+  <div clas="row">
+  <div class="field">
     <%= form.label :'Ingredientes'%>
-    <%= collection_select(:ingredient, :ingredient_ids, Ingredient.all, :id, :description, {}, { :multiple => true } )%>
+  <div>
+    <%= collection_select(:ingredient, :ingredient_ids, Ingredient.all, :id, :description, {}, { :multiple => true })%>
+
+  </div>
+  </div>
   </div>
 
+  <p></p>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Salvar", :class => "btn btn-success btn-lg"%>
   </div>
+
 <% end %>
