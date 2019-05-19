@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0069853c-d56b-4be8-8485-dcff7e996c1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/migrate/20190517012545_create_join_table_dish_ingredient.rb" afterDir="false" />
+    <list default="true" id="0069853c-d56b-4be8-8485-dcff7e996c1c" name="Default Changelist" comment="Melhorado o fator de pesquisa no home, onde é possível pesquisar pela&#10;categoria do prato e ele apresentará quais restaurantes possuem tal&#10;categoria">
+      <change beforePath="$PROJECT_DIR$/.idea/restprova.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/restprova.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,20 +23,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+        <entry file="file://$PROJECT_DIR$/app/controllers/dishes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/restaurant.rb">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dishes.scss">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dishes/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/restaurants/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dishes/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/restaurants/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="26" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>editi</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -49,6 +127,42 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/db/migrate/20190517011730_create_dishes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/dishes.coffee" />
+        <option value="$PROJECT_DIR$/db/migrate/20190517012545_create_join_table_dish_ingredient.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190517012826_create_join_table_restaurant_dish.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
+        <option value="$PROJECT_DIR$/app/models/restaurant.rb" />
+        <option value="$PROJECT_DIR$/app/models/dish.rb" />
+        <option value="$PROJECT_DIR$/app/models/ingredient.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+        <option value="$PROJECT_DIR$/app/views/restaurants/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ingredients/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/ingredients_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/restaurants/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/restaurants/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/restaurants/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/restaurants/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ingredients/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ingredients/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ingredients/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ingredients/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/dishes_controller.rb" />
       </list>
     </option>
   </component>
@@ -63,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -75,6 +190,26 @@
               <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
               <item name="restprova" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
@@ -97,6 +232,34 @@
             <path>
               <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
               <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="dishes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="ingredients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -104,19 +267,25 @@
               <item name="restprova" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="restprova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restprova" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="migrate" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/restprova-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -239,7 +408,15 @@
       <option name="presentableId" value="Default" />
       <updated>1558054395295</updated>
       <workItem from="1558054397020" duration="395000" />
-      <workItem from="1558054845798" duration="1485000" />
+      <workItem from="1558054845798" duration="12619000" />
+      <workItem from="1558067575792" duration="28000" />
+      <workItem from="1558147002851" duration="815000" />
+      <workItem from="1558194157643" duration="382000" />
+      <workItem from="1558194670423" duration="9417000" />
+      <workItem from="1558213416105" duration="10615000" />
+      <workItem from="1558227778230" duration="1310000" />
+      <workItem from="1558280083757" duration="9939000" />
+      <workItem from="1558290394466" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="Criado o Scaffold do &quot;restaurant&quot;.">
       <created>1558055608618</created>
@@ -269,30 +446,353 @@
       <option name="project" value="LOCAL" />
       <updated>1558056392506</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criado o Migrate de ligação entre a tabela &quot;restaurants&quot; e &quot;dishs&quot;">
+      <created>1558056539819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558056539819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Criado o controlador responsável pela tela &quot;home&quot;">
+      <created>1558056837273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558056837273</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Alterado a forma de criação e edição dos &quot;dishes&quot;, agora é preciso selecionar seus respectivos ingredientes">
+      <created>1558147112092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147112092</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Alterado o controlador da home para ele conseguir ter acesso aos &quot;restaurants&quot;">
+      <created>1558147154606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147154606</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Traduzido as notices que compoẽ a adição, edição e exclusão dos &quot;ingredients&quot;">
+      <created>1558147204174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147204174</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adicionado a possibilidade de visualizar os &quot;dishes&quot; no view &quot;show&quot; dos restaurantes, utilizando uma consulta SQL para unir as tabelas.">
+      <created>1558147280345</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147280345</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Alterado a forma de acesso dos &quot;dishes&quot;, onde eles pertencem a &quot;ingredients&quot; e &quot;restaurants&quot;">
+      <created>1558147335860</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147335860</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Alterado a forma que o &quot;ingredient&quot; se comporta, sendo possivel vincula-los a vários &quot;dishes&quot;">
+      <created>1558147381913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147381913</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Alterado a forma que os &quot;restaurants&quot; se comportam, vinculando-os a vários &quot;dishes&quot;.">
+      <created>1558147430333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147430333</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adicionado a seleção de &quot;ingredients&quot; e também a selação do &quot;restaurant&quot; de onde pertence o &quot;dish&quot;">
+      <created>1558147472852</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147472852</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adicionado na &quot;home&quot; a possibilidade de ver os restaurantes cadastrados no sistema">
+      <created>1558147511232</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147511232</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Adiciondo a possibilidade de visualizar os pratos cadastros para o restaurante selecionado">
+      <created>1558147551131</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147551131</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Alterado o schema da base">
+      <created>1558147586391</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558147586391</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Configurado Jquery e Bootstrap.">
+      <created>1558202326206</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202326206</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Apagado espaço desnecessário">
+      <created>1558202358501</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202358501</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Configurado bootstrap, renomeando o arquivo para scss.">
+      <created>1558202403006</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202403006</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Alterado algumas cores e etc, talvez no futuro seja necessário arrumar a conpatibilidade com o bootstrap.">
+      <created>1558202447182</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202447182</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adicionado validador de campos.">
+      <created>1558202468514</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202468514</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Criado a navbar que será utilizada nas outras páginas do site.">
+      <created>1558202505677</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202505677</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Corrigido um erro de portugues que criava a tabela de forma incorreta">
+      <created>1558202547399</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202547399</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Adicionado as Gems do bootstrap e do jquery.">
+      <created>1558202574069</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558202574069</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Alterado o controlador para ser possível realizar a busca por categoria.">
+      <created>1558226110901</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226110901</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Atualizado o controlador da &quot;home&quot; para ser possível pesquisar por categorias, possivelmente será modificado o modo de busca">
+      <created>1558226144920</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226144921</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Alterado o aspecto visual do form do &quot;dish&quot;">
+      <created>1558226172398</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226172398</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Alterado o aspecto visual da página &quot;edit&quot; do &quot;dish&quot;">
+      <created>1558226195951</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226195951</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Alterado o aspecto visual da página &quot;index&quot; do &quot;dish&quot;">
+      <created>1558226217502</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226217502</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Alterado o aspecto visual da página &quot;new&quot; do &quot;dish&quot;">
+      <created>1558226231439</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226231439</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Alterado o aspecto visual da página &quot;show&quot; do &quot;dish&quot;">
+      <created>1558226244822</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226244822</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Alterado o aspecto visual do &quot;index&quot; da &quot;home&quot; e também adicionado uma forma básica de busca que será atualizada">
+      <created>1558226280060</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226280060</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Alterado o form do &quot;ingredients&quot;">
+      <created>1558226305469</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226305469</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Alterado o aspecto visual da página &quot;edit&quot; do &quot;ingredient&quot;">
+      <created>1558226348816</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226348816</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Alterado o aspecto visual da página &quot;index&quot; do &quot;ingredient&quot;">
+      <created>1558226364220</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226364220</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Alterado o aspecto visual da página &quot;new&quot; do &quot;ingredient&quot;">
+      <created>1558226382340</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226382340</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Alterado o aspecto visual da página &quot;show&quot; do &quot;ingredient&quot;">
+      <created>1558226403462</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226403462</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Alterado o form do &quot;restaurant&quot; melhorando seu design">
+      <created>1558226425644</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226425644</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Alterado o aspecto visual da página &quot;edit&quot; do &quot;restaurant&quot;">
+      <created>1558226439886</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226439886</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Alterado o aspecto visual da página &quot;index&quot; do &quot;restaurant&quot;">
+      <created>1558226456171</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226456171</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Alterado o aspecto visual da página &quot;new&quot; do &quot;restaurant&quot;">
+      <created>1558226474431</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226474431</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Alterado o aspecto visual da página &quot;show&quot; do &quot;restaurant&quot;">
+      <created>1558226491939</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226491939</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Alterado o controlador do &quot;restaurant&quot; agora é possível realizar busca por categoria na tela &quot;show&quot; dos &quot;restaraunts&quot;">
+      <created>1558226690658</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1558226690658</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Realizada uma adequação no layout da navbar em todas as views">
+      <created>1558282293684</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1558282293684</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Adicionado a possibilidade de visualizar a qual restaurante pertence o prato acessado.">
+      <created>1558289521043</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1558289521043</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Alterado o método de pesquisa no index do dish para que seja mais preciso&#10;e também adicionado a pesquisa no show.">
+      <created>1558289744639</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1558289744639</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Melhorado o fator de pesquisa no home, onde é possível pesquisar pela&#10;categoria do prato e ele apresentará quais restaurantes possuem tal&#10;categoria">
+      <created>1558289845869</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1558289845869</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Atualizado o método de pesquisa do &quot;index&quot; e do &quot;show&quot; do &quot;restaurant&quot;">
+      <created>1558289905511</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1558289905511</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1880000" />
+    <option name="totallyTimeSpent" value="45933000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.193755" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25940752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884902" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32884902" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -305,22 +805,316 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Criado o Scaffold do &quot;restaurant&quot;." />
-    <MESSAGE value="Criado o Scaffold do &quot;dish&quot;." />
-    <MESSAGE value="Criado o Scaffold do &quot;ingredient&quot;." />
-    <MESSAGE value="Criado o Migrate de ligação entre a tabela &quot;dishs&quot; e &quot;ingredients&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado o Migrate de ligação entre a tabela &quot;dishs&quot; e &quot;ingredients&quot;" />
+    <MESSAGE value="Adicionado as Gems do bootstrap e do jquery." />
+    <MESSAGE value="Alterado o controlador para ser possível realizar a busca por categoria." />
+    <MESSAGE value="Atualizado o controlador da &quot;home&quot; para ser possível pesquisar por categorias, possivelmente será modificado o modo de busca" />
+    <MESSAGE value="Alterado o aspecto visual do form do &quot;dish&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;edit&quot; do &quot;dish&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;index&quot; do &quot;dish&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;new&quot; do &quot;dish&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;show&quot; do &quot;dish&quot;" />
+    <MESSAGE value="Alterado o aspecto visual do &quot;index&quot; da &quot;home&quot; e também adicionado uma forma básica de busca que será atualizada" />
+    <MESSAGE value="Alterado o form do &quot;ingredients&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;edit&quot; do &quot;ingredient&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;index&quot; do &quot;ingredient&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;new&quot; do &quot;ingredient&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;show&quot; do &quot;ingredient&quot;" />
+    <MESSAGE value="Alterado o form do &quot;restaurant&quot; melhorando seu design" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;edit&quot; do &quot;restaurant&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;index&quot; do &quot;restaurant&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;new&quot; do &quot;restaurant&quot;" />
+    <MESSAGE value="Alterado o aspecto visual da página &quot;show&quot; do &quot;restaurant&quot;" />
+    <MESSAGE value="Alterado o controlador do &quot;restaurant&quot; agora é possível realizar busca por categoria na tela &quot;show&quot; dos &quot;restaraunts&quot;" />
+    <MESSAGE value="Realizada uma adequação no layout da navbar em todas as views" />
+    <MESSAGE value="Adicionado a possibilidade de visualizar a qual restaurante pertence o prato acessado." />
+    <MESSAGE value="Alterado o método de pesquisa no index do dish para que seja mais preciso&#10;e também adicionado a pesquisa no show." />
+    <MESSAGE value="Melhorado o fator de pesquisa no home, onde é possível pesquisar pela&#10;categoria do prato e ele apresentará quais restaurantes possuem tal&#10;categoria" />
+    <MESSAGE value="Atualizado o método de pesquisa do &quot;index&quot; e do &quot;show&quot; do &quot;restaurant&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizado o método de pesquisa do &quot;index&quot; e do &quot;show&quot; do &quot;restaurant&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517020242_create_join_table_restaurant_dish.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+        <state relative-caret-position="477">
+          <caret line="213" column="21" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/master.key" />
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/ingredients.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517011133_create_restaurants.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517011730_create_dishes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517012140_create_ingredients.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/_restaurant.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dishes.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dish.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517012826_create_join_table_restaurant_dish.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190517012545_create_join_table_dish_ingredient.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/_dish.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/show.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/_ingredient.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/restaurants.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/show.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/restaurant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ingredients/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/restaurants_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ingredients_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/restaurants/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/dishes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/dishes.scss">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
