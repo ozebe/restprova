@@ -11,22 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="row">
+    <div class="field">
+      <div class="col-xs-3">
+        <%= form.label :'Nome' %>
+        <%= form.text_field :name, :class => "form-control" %>
+      </div>
+    </div>
   </div>
 
+  <div class="row">
   <div class="field">
-    <%= form.label :telephone %>
-    <%= form.text_field :telephone %>
+    <div class="col-xs-3">
+    <%= form.label :'Telefone' %>
+    <%= form.text_field :telephone, :class => "form-control" %>
+    </div>
+  </div>
   </div>
 
+  <div class="row">
   <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
+    <div class="col-xs-3">
+    <%= form.label :'Endereço' %>
+    <%= form.text_field :address, :class => "form-control" %>
+    </div>
   </div>
-
+  </div>
+  <p></p>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Enviar", :class => "btn btn-success btn-lg"%>
   </div>
 <% end %>
