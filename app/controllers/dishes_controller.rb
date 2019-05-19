@@ -5,7 +5,11 @@ class DishesController < ApplicationController
   # GET /dishes.json
   def index
     @dishes = Dish.order(:name)
-
+    @dishes = if params[:term]
+                Dish.where('category LIKE ?', "%#{params[:term]}%")
+              else
+                Dish.all
+              end
   end
 
   # GET /dishes/1
@@ -98,6 +102,6 @@ class DishesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dish_params
-      params.require(:dish).permit(:name, :price, :time_prep, :category)
+      params.require(:dish).permit(:name, :price, :time_prep, :category, :term)
     end
 end
