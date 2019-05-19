@@ -11,12 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+
+  <div class="row">
+    <div class="field">
+      <div class="col-xs-3">
+        <%= form.label :'Descrição do ingrediente' %>
+        <%= form.text_field :description, :class => "form-control" %>
+      </div>
+    </div>
   </div>
 
+  <p></p>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Salvar", :class => "btn btn-success btn-lg" %>
   </div>
 <% end %>
