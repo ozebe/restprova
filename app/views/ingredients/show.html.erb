@@ -1,9 +1,50 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/home/index">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/dishes">Todos os pratos</a></li>
+        <li><a href="/ingredients">Ingredientes</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <%= form_tag('/restaurants', method: 'get') do %>
+
+            <input type="text" class="form-control " placeholder="Buscar categorias" <%= text_field_tag(:term) %>
+            </div>
+
+            <button type="submit" class="btn btn-default">Buscar</button>
+          <% end %>
+
+          </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
 
-<p>
-  <strong>Description:</strong>
-  <%= @ingredient.description %>
-</p>
 
-<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
-<%= link_to 'Back', ingredients_path %>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <strong>Descrição:</strong>
+    </div>
+    <div class="panel-footer"><%= @ingredient.description %></div>
+  </div>
+  <div>
+    <%= link_to 'Voltar', ingredients_path, :class => "btn btn-info" %> |
+    <%= link_to 'Editar', edit_ingredient_path(@ingredient), :class => "btn btn-warning" %>
+
+  </div>
+</div>
