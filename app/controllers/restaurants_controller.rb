@@ -15,9 +15,13 @@ class RestaurantsController < ApplicationController
     #é criada a união das tabelas para conseguirmos pegar os dados delas
     @dishes = @dishes.joins("INNER JOIN dishes_restaurants AS dr ON dishes.id = dr.dish_id INNER JOIN restaurants AS r
     ON dr.restaurant_id = r.id")
-
     @dishes = @dishes.where("r.id = "+params[:id])
 
+    @dishes = if params[:term]
+                Dish.where('category LIKE ?', "%#{params[:term]}%")
+              else
+                Dish.all
+              end
   end
 
   # GET /restaurants/new
