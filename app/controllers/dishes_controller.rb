@@ -6,15 +6,21 @@ class DishesController < ApplicationController
   def index
     @dishes = Dish.order(:name)
     @dishes = if params[:term]
-                Dish.where('category LIKE ?', "%#{params[:term]}%")
+                Dish.where('UPPER (category) LIKE ? ', "#{params[:term].upcase}%")
               else
-                Dish.all
+                @dishes.all
               end
   end
 
   # GET /dishes/1
   # GET /dishes/1.json
   def show
+    #criado o join entre as tabelas para ser encontrado o restaurante que serve o prato escolhido
+    @restaurants = Restaurant.all
+    @restaurants = @restaurants.joins("INNER JOIN dishes_restaurants AS dr ON restaurants.id = dr.restaurant_id
+INNER JOIN dishes AS d ON dr.dish_id = d.id")
+    @restaurants= @restaurants.where("dr.dish_id = " + params[:id])
+
   end
 
   # GET /dishes/new
